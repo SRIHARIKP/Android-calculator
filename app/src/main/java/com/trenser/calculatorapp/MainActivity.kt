@@ -63,61 +63,6 @@ class MainActivity : AppCompatActivity() {
         button9.setOnClickListener(listener)
         buttonDot.setOnClickListener(listener)
 
-//        val operatorlistener = View.OnClickListener { v ->
-//            val b = v as Button
-//            Log.d("OPERATOR", pendingOperator.equals("").toString())
-//            if(numberField?.text.toString().equals("")){
-//                numberField.setText(result.toString())
-//            }
-//
-//            if (pendingOperator.equals("") ) {
-//                result = numberField.text.toString().toDouble()
-//                operatorView?.setText(b.text.toString())
-//
-//                numberField.setText("")
-//            } else {
-//                var num1 = numberField.text.toString().toDouble()
-//                performFunc(num1, result,pendingOperator)
-//                operatorView?.setText(b.text.toString())
-//
-//                numberField.setText("")
-//
-//            }
-//            if(!b.text.equals("=")){
-//                pendingOperator = b.text.toString()
-//            }else{
-//                pendingOperator = ""
-//            }
-//            operatorView?.setText(b.text.toString())
-//
-//            numberField.setText("")
-//        }
-//
-//        buttonEquals.setOnClickListener(operatorlistener)
-//        buttonPlus.setOnClickListener(operatorlistener)
-//        buttonMinus.setOnClickListener(operatorlistener)
-//        buttonMultiply.setOnClickListener(operatorlistener)
-//        buttonDivide.setOnClickListener(operatorlistener)
-//
-//    }
-//
-//    fun performFunc(num1:Double, num2: Double, optr: String) {
-//        Log.d("OPERATOR", optr)
-//        Log.d(
-//            "OPERATOR",
-//            "numbfield: ${num1}\nresult: ${num2}"
-//        )
-//        when (optr) {
-//
-//            "+" -> result = num1 + num2
-//            "-" -> result = num2 - num1
-//            "*" -> result = num1 * num2
-//            "/" -> result = num2 / num1
-//
-//
-//        }
-//        resultField?.setText(result.toString())
-//    }
 
         val operatorlistener = View.OnClickListener { v ->
             val b = v as Button
@@ -196,6 +141,4 @@ class MainActivity : AppCompatActivity() {
         }
         pendingOperator= savedInstanceState.getString("Pendingoperator")!!
     }
-
-
 }
